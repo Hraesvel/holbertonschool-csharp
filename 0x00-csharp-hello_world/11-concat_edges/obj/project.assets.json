@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/11-concat_edges.csproj",
+      "projectUniqueName": "/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/11-concat_edges/11-concat_edges.csproj",
       "projectName": "11-concat_edges",
-      "projectPath": "/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/11-concat_edges.csproj",
+      "projectPath": "/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/11-concat_edges/11-concat_edges.csproj",
       "packagesPath": "/home/ostoyae/.nuget/packages/",
-      "outputPath": "/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/obj/",
+      "outputPath": "/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/11-concat_edges/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
