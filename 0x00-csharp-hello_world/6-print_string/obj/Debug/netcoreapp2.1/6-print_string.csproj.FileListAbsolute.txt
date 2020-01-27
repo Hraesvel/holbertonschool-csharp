@@ -1,0 +1,11 @@
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/obj/Debug/netcoreapp2.1/6-print_string.csprojAssemblyReference.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/obj/Debug/netcoreapp2.1/6-print_string.csproj.CoreCompileInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/obj/Debug/netcoreapp2.1/6-print_string.AssemblyInfoInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/obj/Debug/netcoreapp2.1/6-print_string.AssemblyInfo.cs
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/bin/Debug/netcoreapp2.1/6-print_string.deps.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/bin/Debug/netcoreapp2.1/6-print_string.runtimeconfig.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/bin/Debug/netcoreapp2.1/6-print_string.runtimeconfig.dev.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/bin/Debug/netcoreapp2.1/6-print_string.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/bin/Debug/netcoreapp2.1/6-print_string.pdb
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/obj/Debug/netcoreapp2.1/6-print_string.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/6-print_string/obj/Debug/netcoreapp2.1/6-print_string.pdb

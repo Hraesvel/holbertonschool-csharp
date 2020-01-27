@@ -1,0 +1,11 @@
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/obj/Debug/netcoreapp2.1/10-copy_cut_paste.csprojAssemblyReference.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/obj/Debug/netcoreapp2.1/10-copy_cut_paste.csproj.CoreCompileInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/obj/Debug/netcoreapp2.1/10-copy_cut_paste.AssemblyInfoInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/obj/Debug/netcoreapp2.1/10-copy_cut_paste.AssemblyInfo.cs
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/bin/Debug/netcoreapp2.1/10-copy_cut_paste.deps.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/bin/Debug/netcoreapp2.1/10-copy_cut_paste.runtimeconfig.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/bin/Debug/netcoreapp2.1/10-copy_cut_paste.runtimeconfig.dev.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/bin/Debug/netcoreapp2.1/10-copy_cut_paste.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/bin/Debug/netcoreapp2.1/10-copy_cut_paste.pdb
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/obj/Debug/netcoreapp2.1/10-copy_cut_paste.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/10-copy_cut_paste/obj/Debug/netcoreapp2.1/10-copy_cut_paste.pdb

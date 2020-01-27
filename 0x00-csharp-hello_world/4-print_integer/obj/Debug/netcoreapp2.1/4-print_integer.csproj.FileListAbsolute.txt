@@ -1,0 +1,11 @@
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp2.1/4-print_integer.deps.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp2.1/4-print_integer.runtimeconfig.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp2.1/4-print_integer.runtimeconfig.dev.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp2.1/4-print_integer.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp2.1/4-print_integer.pdb
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp2.1/4-print_integer.csprojAssemblyReference.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp2.1/4-print_integer.csproj.CoreCompileInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp2.1/4-print_integer.AssemblyInfoInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp2.1/4-print_integer.AssemblyInfo.cs
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp2.1/4-print_integer.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp2.1/4-print_integer.pdb

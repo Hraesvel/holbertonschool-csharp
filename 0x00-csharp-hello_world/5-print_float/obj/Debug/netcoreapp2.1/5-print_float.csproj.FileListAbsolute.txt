@@ -1,0 +1,11 @@
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp2.1/5-print_float.deps.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp2.1/5-print_float.runtimeconfig.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp2.1/5-print_float.runtimeconfig.dev.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp2.1/5-print_float.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp2.1/5-print_float.pdb
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp2.1/5-print_float.csprojAssemblyReference.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp2.1/5-print_float.csproj.CoreCompileInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp2.1/5-print_float.AssemblyInfoInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp2.1/5-print_float.AssemblyInfo.cs
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp2.1/5-print_float.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp2.1/5-print_float.pdb

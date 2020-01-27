@@ -1,0 +1,11 @@
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/bin/Debug/netcoreapp2.1/11-concat_edges.deps.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/bin/Debug/netcoreapp2.1/11-concat_edges.runtimeconfig.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/bin/Debug/netcoreapp2.1/11-concat_edges.runtimeconfig.dev.json
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/bin/Debug/netcoreapp2.1/11-concat_edges.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/bin/Debug/netcoreapp2.1/11-concat_edges.pdb
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/obj/Debug/netcoreapp2.1/11-concat_edges.csprojAssemblyReference.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/obj/Debug/netcoreapp2.1/11-concat_edges.csproj.CoreCompileInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/obj/Debug/netcoreapp2.1/11-concat_edges.AssemblyInfoInputs.cache
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/obj/Debug/netcoreapp2.1/11-concat_edges.AssemblyInfo.cs
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/obj/Debug/netcoreapp2.1/11-concat_edges.dll
+/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/11-concat_edges/obj/Debug/netcoreapp2.1/11-concat_edges.pdb
