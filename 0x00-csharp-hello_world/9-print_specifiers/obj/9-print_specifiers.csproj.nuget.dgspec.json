@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj": {}
+    "/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj": {}
   },
   "projects": {
-    "/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj": {
+    "/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj",
+        "projectUniqueName": "/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj",
         "projectName": "9-print_specifiers",
-        "projectPath": "/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj",
+        "projectPath": "/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj",
         "packagesPath": "/home/ostoyae/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/9-print_specifiers/obj/",
+        "outputPath": "/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"

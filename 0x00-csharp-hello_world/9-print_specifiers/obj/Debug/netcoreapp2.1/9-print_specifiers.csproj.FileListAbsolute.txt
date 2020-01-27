@@ -9,3 +9,14 @@
 /mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/9-print_specifiers/obj/Debug/netcoreapp2.1/9-print_specifiers.AssemblyInfo.cs
 /mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/9-print_specifiers/obj/Debug/netcoreapp2.1/9-print_specifiers.dll
 /mnt/c/Users/msmit/work/VRAR/0x00-csharp-hello_world/9-print_specifiers/obj/Debug/netcoreapp2.1/9-print_specifiers.pdb
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/bin/Debug/netcoreapp2.1/9-print_specifiers.deps.json
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/bin/Debug/netcoreapp2.1/9-print_specifiers.runtimeconfig.json
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/bin/Debug/netcoreapp2.1/9-print_specifiers.runtimeconfig.dev.json
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/bin/Debug/netcoreapp2.1/9-print_specifiers.dll
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/bin/Debug/netcoreapp2.1/9-print_specifiers.pdb
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/obj/Debug/netcoreapp2.1/9-print_specifiers.csprojAssemblyReference.cache
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/obj/Debug/netcoreapp2.1/9-print_specifiers.csproj.CoreCompileInputs.cache
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/obj/Debug/netcoreapp2.1/9-print_specifiers.AssemblyInfoInputs.cache
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/obj/Debug/netcoreapp2.1/9-print_specifiers.AssemblyInfo.cs
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/obj/Debug/netcoreapp2.1/9-print_specifiers.dll
+/mnt/c/Users/msmit/work/VRAR/holbertonschool-csharp/0x00-csharp-hello_world/9-print_specifiers/obj/Debug/netcoreapp2.1/9-print_specifiers.pdb
