@@ -6,7 +6,7 @@ class Program
     {
         Random rndm = new Random();
         int number = rndm.Next(-10000, 10000);
-        int last = Math.Abs(number % 10);
+        int last = number % 10;
         if (last > 5)
         {
             Console.WriteLine(
