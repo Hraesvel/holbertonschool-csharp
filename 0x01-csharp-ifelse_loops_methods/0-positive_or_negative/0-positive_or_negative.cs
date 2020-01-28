@@ -12,11 +12,11 @@ class Program
         }
         else if (number < 0)
         {
-            Console.WriteLine("{0} is negitive", number);
+            Console.WriteLine("{0} is negative", number);
         }
         else
         {
-            Console.WriteLine("{0} is zero", number);
+            Console.WriteLine("is zero");
         }
     }
 }
