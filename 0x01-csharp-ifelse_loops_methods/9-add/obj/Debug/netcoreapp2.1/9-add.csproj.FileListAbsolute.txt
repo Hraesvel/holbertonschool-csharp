@@ -1,0 +1,10 @@
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\bin\Debug\netcoreapp2.1\9-add.deps.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\bin\Debug\netcoreapp2.1\9-add.runtimeconfig.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\bin\Debug\netcoreapp2.1\9-add.runtimeconfig.dev.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\bin\Debug\netcoreapp2.1\9-add.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\bin\Debug\netcoreapp2.1\9-add.pdb
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\obj\Debug\netcoreapp2.1\9-add.csprojAssemblyReference.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\obj\Debug\netcoreapp2.1\9-add.AssemblyInfoInputs.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\obj\Debug\netcoreapp2.1\9-add.AssemblyInfo.cs
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\obj\Debug\netcoreapp2.1\9-add.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\9-add\obj\Debug\netcoreapp2.1\9-add.pdb
