@@ -47,3 +47,4 @@ $RECYCLE.BIN/
 /.idea/
 /0x00-csharp-hello_world/*/bin/
 /0x01-csharp-ifelse_loops_methods/*/bin/
+/0x02-csharp-arrays_lists_dictionaries/*/bin/
