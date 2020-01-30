@@ -1,0 +1,10 @@
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\obj\Debug\netcoreapp2.1\4-print_list.csprojAssemblyReference.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\obj\Debug\netcoreapp2.1\4-print_list.AssemblyInfoInputs.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\obj\Debug\netcoreapp2.1\4-print_list.AssemblyInfo.cs
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\bin\Debug\netcoreapp2.1\4-print_list.deps.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\bin\Debug\netcoreapp2.1\4-print_list.runtimeconfig.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\bin\Debug\netcoreapp2.1\4-print_list.runtimeconfig.dev.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\bin\Debug\netcoreapp2.1\4-print_list.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\bin\Debug\netcoreapp2.1\4-print_list.pdb
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\obj\Debug\netcoreapp2.1\4-print_list.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\4-print_list\obj\Debug\netcoreapp2.1\4-print_list.pdb

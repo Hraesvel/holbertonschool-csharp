@@ -1,0 +1,10 @@
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.csprojAssemblyReference.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.AssemblyInfoInputs.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.AssemblyInfo.cs
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.deps.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.runtimeconfig.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.runtimeconfig.dev.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.pdb
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.pdb
