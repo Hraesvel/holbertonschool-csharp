@@ -1,0 +1,10 @@
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\bin\Debug\netcoreapp2.1\10-delete_key_value.deps.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\bin\Debug\netcoreapp2.1\10-delete_key_value.runtimeconfig.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\bin\Debug\netcoreapp2.1\10-delete_key_value.runtimeconfig.dev.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\bin\Debug\netcoreapp2.1\10-delete_key_value.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\bin\Debug\netcoreapp2.1\10-delete_key_value.pdb
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\obj\Debug\netcoreapp2.1\10-delete_key_value.csprojAssemblyReference.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\obj\Debug\netcoreapp2.1\10-delete_key_value.AssemblyInfoInputs.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\obj\Debug\netcoreapp2.1\10-delete_key_value.AssemblyInfo.cs
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\obj\Debug\netcoreapp2.1\10-delete_key_value.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\10-delete_key_value\obj\Debug\netcoreapp2.1\10-delete_key_value.pdb

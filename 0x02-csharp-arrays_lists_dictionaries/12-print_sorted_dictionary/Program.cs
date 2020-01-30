@@ -10,7 +10,9 @@ class Program
         myDict.Add("language", "C");
         myDict.Add("track", "low level");
         myDict.Add("school", "Holberton");
+        myDict.Add("address", "972 Mission St.");
+        myDict.Add("city", "San Francisco");
 
-        Console.WriteLine("Number of keys: {0}", Dictionary.NumberOfKeys(myDict));
+        Dictionary.PrintSorted(myDict);
     }
 }

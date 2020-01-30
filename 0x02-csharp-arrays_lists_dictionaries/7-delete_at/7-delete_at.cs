@@ -9,7 +9,6 @@ class List {
             Console.WriteLine("Index is out of range");
             return;
         }
-
         myList.Remove(myList[index]);
     }
 }
