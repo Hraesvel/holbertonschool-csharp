@@ -1,0 +1,10 @@
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\obj\Debug\netcoreapp2.1\100-jagged_array.csprojAssemblyReference.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\obj\Debug\netcoreapp2.1\100-jagged_array.AssemblyInfoInputs.cache
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\obj\Debug\netcoreapp2.1\100-jagged_array.AssemblyInfo.cs
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\bin\Debug\netcoreapp2.1\100-jagged_array.deps.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\bin\Debug\netcoreapp2.1\100-jagged_array.runtimeconfig.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\bin\Debug\netcoreapp2.1\100-jagged_array.runtimeconfig.dev.json
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\bin\Debug\netcoreapp2.1\100-jagged_array.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\bin\Debug\netcoreapp2.1\100-jagged_array.pdb
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\obj\Debug\netcoreapp2.1\100-jagged_array.dll
+C:\Users\msmit\work\VRAR\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\100-jagged_array\obj\Debug\netcoreapp2.1\100-jagged_array.pdb
