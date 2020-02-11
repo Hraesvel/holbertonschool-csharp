@@ -10,7 +10,7 @@ class MyQueue
         Console.WriteLine("Number of items: {0}", aQueue.Count);
         Console.WriteLine("First item: {0}", aQueue.Peek());
         aQueue.Enqueue(newItem);
-        Console.WriteLine("Queue contains {0}: {1}",
+        Console.WriteLine("Queue contains \"{0}\": {1}",
         search,
         hasSearch
         );
