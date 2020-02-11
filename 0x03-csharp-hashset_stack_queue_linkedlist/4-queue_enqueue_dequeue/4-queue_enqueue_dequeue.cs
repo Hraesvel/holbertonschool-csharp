@@ -7,8 +7,9 @@ class MyQueue
      Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
         bool hasSearch = aQueue.Contains(search);
+
         Console.WriteLine("Number of items: {0}", aQueue.Count);
-        Console.WriteLine("First item: {0}", aQueue.Peek());
+        Console.WriteLine("{0}", aQueue.Count == 0 ? "Queue is empty" : string.Format("First item: {0}", aQueue.Peek()));
         aQueue.Enqueue(newItem);
         Console.WriteLine("Queue contains \"{0}\": {1}",
         search,
