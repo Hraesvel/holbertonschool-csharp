@@ -6,4 +6,5 @@ $name=$args[0]
 dotnet new console -f netcoreapp2.1 -n $name
 cd ./$name
 mv "Program.cs" "main.cs"
-touch "$name.cs"
+echo $null >> "$name.cs"
+cd ..
