@@ -5,4 +5,5 @@ if ($args[0] -eq $null -or $args[0] -eq "" ) {
 $name=$args[0]
 dotnet new console -f netcoreapp2.1 -n $name
 cd ./$name
+mv "Program.cs" "main.cs"
 touch "$name.cs"
