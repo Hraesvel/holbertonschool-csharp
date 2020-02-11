@@ -1,0 +1,11 @@
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\bin\Debug\netcoreapp2.1\8-linkedlist_find.deps.json
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\bin\Debug\netcoreapp2.1\8-linkedlist_find.runtimeconfig.json
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\bin\Debug\netcoreapp2.1\8-linkedlist_find.runtimeconfig.dev.json
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\bin\Debug\netcoreapp2.1\8-linkedlist_find.dll
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\bin\Debug\netcoreapp2.1\8-linkedlist_find.pdb
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\obj\Debug\netcoreapp2.1\8-linkedlist_find.csprojAssemblyReference.cache
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\obj\Debug\netcoreapp2.1\8-linkedlist_find.csproj.CoreCompileInputs.cache
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\obj\Debug\netcoreapp2.1\8-linkedlist_find.AssemblyInfoInputs.cache
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\obj\Debug\netcoreapp2.1\8-linkedlist_find.AssemblyInfo.cs
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\obj\Debug\netcoreapp2.1\8-linkedlist_find.dll
+D:\Work_Banshee\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\8-linkedlist_find\obj\Debug\netcoreapp2.1\8-linkedlist_find.pdb
