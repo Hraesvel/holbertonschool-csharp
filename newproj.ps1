@@ -6,5 +6,5 @@ $name=$args[0]
 dotnet new console -f netcoreapp2.1 -n $name
 cd ./$name
 mv "Program.cs" "main.cs"
-echo $null >> "$name.cs"
+powershell -c "[io.file]::WriteAllText('$name.cs','',[System.Text.Encoding]::UTF8)"
 cd ..
