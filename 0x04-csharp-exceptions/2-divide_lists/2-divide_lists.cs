@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using static System.Console;
 
@@ -7,9 +6,7 @@ class List {
     public static List<int> Divide(List<int> list1, List<int> list2, int listLength) {
         List<int> result = new List<int>();
         
-        int max = list1.Count > list2.Count ? list1.Count : list2.Count;
-
-        for(int i = 0 ; i < max; i++)
+        for(int i = 0 ; i < listLength; i++)
         {
             try 
             {
