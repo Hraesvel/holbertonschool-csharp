@@ -10,13 +10,13 @@ class List
             Console.WriteLine("List is empty");
             return -1;
         }
-        int max = myList[0];
+        int m = myList[0];
 
         foreach (int i in myList)
         {
-            max = i > max ? i : max;
+            m = i > m ? i : m;
         }
 
-        return max;
+        return m;
     }
 }
