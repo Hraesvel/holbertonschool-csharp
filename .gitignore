@@ -45,8 +45,6 @@ $RECYCLE.BIN/
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
 /.idea/
-/0x00-csharp-hello_world/*/bin/
-/0x01-csharp-ifelse_loops_methods/*/bin/
-/0x02-csharp-arrays_lists_dictionaries/*/bin/
-/0x03-csharp-hashset_stack_queue_linkedlist/*/bin/
+*/bin/
+*/obj/
 */newproj.ps1
