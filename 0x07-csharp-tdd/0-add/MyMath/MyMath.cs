@@ -9,7 +9,8 @@ using static System.Console;
 namespace MyMath
 {
 
-    class Operations
+    /// <summary> Class with methods that handle math operations</summary>
+    public class Operations
     {
         /// <summary> Added to Interger types together</summary>
         /// <param a = "left side"></param>
