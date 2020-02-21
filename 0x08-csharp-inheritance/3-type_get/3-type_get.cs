@@ -3,39 +3,12 @@ using static System.Console;
 using System.Reflection;
 
 class Obj {
-    /// <summary>
-    /// checks if a value is of type int
-    /// </summary>
-    /// <param obj="value ti inspect"></param>
-    /// <returns> true else flase</returns>
-    public static bool IsOfTypeInt (object obj) {
-        return obj.GetType () == typeof (int) ? true : false;
-    }
-
-    /// <summary>
-    /// checks if a value is an instance of class Array.
-    /// </summary>
-    /// <param obj="value to inspect"></param>
-    /// <returns>bool</returns>
-    public static bool IsInstanceOfArray (object obj) {
-        return obj is Array ? true : false;
-    }
-
-    /// <summary>
-    /// Check if a type is a subclass of another.
-    /// </summary>
-    /// <param derivedType="derivedType"></param>
-    /// <param baseType="baseType"></param>
-    /// <returns>bool</returns>
-    public static bool IsOnlyASubclass (Type derivedType, Type baseType) {
-        return derivedType.IsSubclassOf (baseType);
-    }
 
     /// <summary>
     ///  prints the names of the available properties and methods of an object.
     /// </summary>
     /// <param myObj="object to inspect"></param>
-    public static void Print (object myObj) {
+    public static void Print(object myObj) {
         TypeInfo t = myObj.GetType ().GetTypeInfo ();
         var prop = t.DeclaredProperties;
         var method = t.DeclaredMethods;
