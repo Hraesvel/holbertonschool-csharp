@@ -27,7 +27,7 @@ class Obj {
     /// </summary>
     /// <param derivedType="derivedType"></param>
     /// <param baseType="baseType"></param>
-    /// <returns></returns>
+    /// <returns>bool</returns>
     public static bool IsOnlyASubclass(Type derivedType, Type baseType) {
         return derivedType.IsSubclassOf(baseType);
     }
