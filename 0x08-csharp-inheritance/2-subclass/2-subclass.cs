@@ -1,9 +1,6 @@
 ﻿using System;
 using static System.Console;
 
-/// <summary>
-/// Obj class
-/// </summary>
 class Obj {
     /// <summary>
     /// checks if a value is of type int
