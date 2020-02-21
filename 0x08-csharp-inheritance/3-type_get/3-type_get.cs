@@ -8,17 +8,16 @@ class Obj {
     /// </summary>
     /// <param obj="value ti inspect"></param>
     /// <returns> true else flase</returns>
-    public static bool IsOfTypeInt(object obj)
-    {
-    return obj.GetType() == typeof(int) ? true : false;
+    public static bool IsOfTypeInt (object obj) {
+        return obj.GetType () == typeof (int) ? true : false;
     }
 
-/// <summary>
-/// checks if a value is an instance of class Array.
-/// </summary>
-/// <param obj="value to inspect"></param>
-/// <returns>bool</returns>
-    public static bool IsInstanceOfArray(object obj) {
+    /// <summary>
+    /// checks if a value is an instance of class Array.
+    /// </summary>
+    /// <param obj="value to inspect"></param>
+    /// <returns>bool</returns>
+    public static bool IsInstanceOfArray (object obj) {
         return obj is Array ? true : false;
     }
 
@@ -28,20 +27,24 @@ class Obj {
     /// <param derivedType="derivedType"></param>
     /// <param baseType="baseType"></param>
     /// <returns>bool</returns>
-    public static bool IsOnlyASubclass(Type derivedType, Type baseType) {
-        return derivedType.IsSubclassOf(baseType);
+    public static bool IsOnlyASubclass (Type derivedType, Type baseType) {
+        return derivedType.IsSubclassOf (baseType);
     }
 
-    public static void Print(object myObj) {
-        TypeInfo t = myObj.GetType().GetTypeInfo();
-    var prop = t.DeclaredProperties;
-    var method = t.DeclaredMethods;
-    WriteLine("{0} Properties", myObj.GetType().Name);
-    foreach (var i in prop)
-            WriteLine(i.Name);
-    WriteLine("{0} Methods", myObj.GetType().Name);
-    foreach (var i in method)
-        if (i.IsPublic)
-            WriteLine(i.Name);
+    /// <summary>
+    ///  prints the names of the available properties and methods of an object.
+    /// </summary>
+    /// <param myObj="object to inspect"></param>
+    public static void Print (object myObj) {
+        TypeInfo t = myObj.GetType ().GetTypeInfo ();
+        var prop = t.DeclaredProperties;
+        var method = t.DeclaredMethods;
+        WriteLine ("{0} Properties", myObj.GetType ().Name);
+        foreach (var i in prop)
+            WriteLine (i.Name);
+        WriteLine ("{0} Methods", myObj.GetType ().Name);
+        foreach (var i in method)
+            if (i.IsPublic)
+                WriteLine (i.Name);
     }
 }
