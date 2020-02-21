@@ -37,14 +37,6 @@ class Rectangle : Shape {
     }
 
 /// <summary>
-/// Calculate area
-/// </summary>
-/// <returns>Int of Height * Width</returns>
-    public override int Area() {
-            return height * width;
-    }
-
-/// <summary>
 /// Return string representation for Rectangle 
 /// </summary>
 /// <returns>stinrg</returns>
@@ -67,6 +59,4 @@ class Square : Rectangle {
                         Width = Height = size = value;
                 }
         }
-
-
 }
