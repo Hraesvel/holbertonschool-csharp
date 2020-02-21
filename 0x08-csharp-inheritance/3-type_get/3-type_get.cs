@@ -2,9 +2,6 @@
 using static System.Console;
 using System.Reflection;
 
-/// <summary>
-/// Obj class
-/// </summary>
 class Obj {
     /// <summary>
     /// checks if a value is of type int
