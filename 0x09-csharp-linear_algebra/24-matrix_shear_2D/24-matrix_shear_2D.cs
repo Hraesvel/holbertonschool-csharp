@@ -3,22 +3,48 @@ using System.Linq;
 
 class MatrixMath
 {
+    enum Direction {
+         x = 0,
+         y = 1
+    }
+    public static double[,] Shear2D(double[,] matrix, char direction, double factor) {
+        
+        if (matrix.LongLength/2 != 2 )
+            return new double[,] {{-1}};
 
-    public static double[,] Rotate2D(double[,] matrix, double angle)
-    {
-        if (matrix.LongLength / 2 != 2)
-            return new double[,] { { -1 } };
+        else if (direction != 'x' && direction != 'y')
+            return new double[,] {{-1}};
 
-        double[,] rot = new double[2, 2];
+    
+        int dir = (int)direction - (int)'x';
+
+        Console.WriteLine("dir: {0}", dir);
+
+
+        for (int i = 0; i < 2; i++){
+            matrix[dir, i] += factor;
+        }
+
+        return matrix;
+        
+        
+
+        
+    }
+    public static double[,] Rotate2D(double[,] matrix, double angle) {
+         if (matrix.LongLength/2 != 2)
+            return new double[,] {{-1}};
+        
+        double[,] rot = new double[2,2];
 
         for (int col = 0; col < matrix.GetLength(1); col++)
         {
             var column = GetColumn(matrix, (uint)col);
-
+        
 
             rot[0, col] = Math.Round((column[0] * Math.Cos(angle) + column[1] * -(Math.Sin(angle))), 2);
             rot[1, col] = Math.Round((column[0] * Math.Sin(angle) + column[1] * (Math.Cos(angle))), 2);
-
+            
         }
 
         return rot;

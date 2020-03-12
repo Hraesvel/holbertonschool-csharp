@@ -4,21 +4,62 @@ using System.Linq;
 class MatrixMath
 {
 
-    public static double[,] Rotate2D(double[,] matrix, double angle)
-    {
-        if (matrix.LongLength / 2 != 2)
-            return new double[,] { { -1 } };
+    public static double Determinant(double[,] matrix) {
+        int size = 0;
+        if (((size = matrix.GetLength(0)) != 2 && matrix.GetLength(0) != 3) || !IsMatrix(matrix) )
+            return -1.0;
 
-        double[,] rot = new double[2, 2];
+        double det = 0.0;
+
+        if (size == 2) {
+            det = (matrix[0,0] * matrix[1,1]) - (matrix[1,0] * matrix[0,1]);
+        } else {
+            det = 
+            matrix[0,0]*(matrix[1,1] * matrix[2,2] - matrix[2,1] * matrix[1,2]) - 
+            matrix[0,1]*(matrix[1,0] * matrix[2,2] - matrix[2,0] * matrix[1,2]) -
+            matrix[0,2]*(matrix[1,0] * matrix[2,1] - matrix[2,0] * matrix[2,2]);
+        }
+
+        return det;
+    }
+    public static double[,] Shear2D(double[,] matrix, char direction, double factor) {
+        
+        if (matrix.LongLength/2 != 2 )
+            return new double[,] {{-1}};
+
+        else if (direction != 'x' && direction != 'y')
+            return new double[,] {{-1}};
+
+    
+        int dir = (int)direction - (int)'x';
+
+        Console.WriteLine("dir: {0}", dir);
+
+
+        for (int i = 0; i < 2; i++){
+            matrix[dir, i] += factor;
+        }
+
+        return matrix;
+        
+        
+
+        
+    }
+    public static double[,] Rotate2D(double[,] matrix, double angle) {
+         if (matrix.LongLength/2 != 2)
+            return new double[,] {{-1}};
+        
+        double[,] rot = new double[2,2];
 
         for (int col = 0; col < matrix.GetLength(1); col++)
         {
             var column = GetColumn(matrix, (uint)col);
-
+        
 
             rot[0, col] = Math.Round((column[0] * Math.Cos(angle) + column[1] * -(Math.Sin(angle))), 2);
             rot[1, col] = Math.Round((column[0] * Math.Sin(angle) + column[1] * (Math.Cos(angle))), 2);
-
+            
         }
 
         return rot;
