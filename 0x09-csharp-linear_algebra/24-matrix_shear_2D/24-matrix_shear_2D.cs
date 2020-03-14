@@ -3,72 +3,70 @@ using System.Linq;
 
 class MatrixMath
 {
-    enum Direction {
-         x = 0,
-         y = 1
+    enum Direction
+    {
+        x = 0,
+        y = 1
     }
-    public static double[,] Shear2D(double[,] matrix, char direction, double factor) {
-        
-        if (matrix.LongLength/2 != 2 )
-            return new double[,] {{-1}};
+    public static double[,] Shear2D(double[,] matrix, char direction, double factor)
+    {
+
+        if (matrix.LongLength / 2 != 2)
+            return new double[,] { { -1 } };
 
         else if (direction != 'x' && direction != 'y')
-            return new double[,] {{-1}};
+            return new double[,] { { -1 } };
 
-    
+
         int dir = (int)direction - (int)'x';
 
-        Console.WriteLine("dir: {0}", dir);
+        double[,] shear;
+        double[,] s = new double[2, 2];
 
 
-        for (int i = 0; i < 2; i++){
-            matrix[dir, i] += factor;
+        if (dir == 0)
+        {
+
+            shear = new double[2, 2] { { 1, factor }, { 0, 1 } };
+            for (int r1 = 0; r1 < 2; r1++)
+                for (int r2 = 0; r2 < 2; r2++)
+                {
+                    s[r1, r2] = VectorMath.DotProduct(GetRow(shear, (uint)r2), GetRow(matrix, (uint)r1));
+                }
+        }
+        else
+        {
+            shear = new double[2, 2] { { 1, 0 }, { 0, factor } };
+            for (int r1 = 0; r1 < 2; r1++)
+                for (int r2 = 0; r2 < 2; r2++)
+                {
+                    s[r1, r2] = VectorMath.DotProduct(GetRow(shear, (uint)r2), GetRow(matrix, (uint)r1));
+                }
         }
 
-        return matrix;
-        
-        
+        return s;
 
-        
+
     }
-    public static double[,] Rotate2D(double[,] matrix, double angle) {
-         if (matrix.LongLength/2 != 2)
-            return new double[,] {{-1}};
-        
-        double[,] rot = new double[2,2];
+    
+    public static double[,] Rotate2D(double[,] matrix, double angle)
+    {
+        if (matrix.LongLength / 2 != 2)
+            return new double[,] { { -1 } };
+
+        double[,] rot = new double[2, 2];
 
         for (int col = 0; col < matrix.GetLength(1); col++)
         {
             var column = GetColumn(matrix, (uint)col);
-        
+
 
             rot[0, col] = Math.Round((column[0] * Math.Cos(angle) + column[1] * -(Math.Sin(angle))), 2);
             rot[1, col] = Math.Round((column[0] * Math.Sin(angle) + column[1] * (Math.Cos(angle))), 2);
-            
+
         }
 
         return rot;
-
-    }
-    public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
-    {
-
-        if (matrix1.GetLength(1) != (matrix2.GetLength(1)))
-            return new double[,] { { -1 } };
-
-        int rowSize = matrix1.GetLength(0);
-        int colSize = matrix1.GetLength(1);
-        var result = new double[rowSize, colSize];
-
-        for (int row = 0; row < rowSize; row++)
-            for (int col = 0; col < colSize; col++)
-                result[row, col] =
-                    VectorMath.DotProduct(
-                        GetRow(matrix1, (uint)row),
-                         GetColumn(matrix2, (uint)col));
-
-        return result;
-
 
     }
 
