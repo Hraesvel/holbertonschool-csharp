@@ -20,7 +20,7 @@ class MatrixMath
             matrix[0,2]*(matrix[1,0] * matrix[2,1] - matrix[2,0] * matrix[2,2]);
         }
 
-        return det;
+        return Math.Round(det,2);
     }
     public static double[,] Shear2D(double[,] matrix, char direction, double factor) {
         
