@@ -12,7 +12,8 @@ class VectorMath
     public static double[] CrossProduct(double[] vector1, double[] vector2)
     {
         if (!VectorMath.IsVector(vector1) || !VectorMath.IsVector(vector2) ||
-        vector1.Count() != vector2.Count()
+        vector1.Count() != vector2.Count() ||
+        vector1.Count() != 3 || vector2.Count() != 3
         )
             return new double[] { -1 };
 
@@ -44,7 +45,7 @@ class VectorMath
         return cross;
     }
 
-        static bool IsVector(double[] vec)
+    static bool IsVector(double[] vec)
     {
         if (vec.Count() == 2 || vec.Count() == 3)
             return true;
