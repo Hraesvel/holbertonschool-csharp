@@ -3,6 +3,16 @@ using System.Linq;
 
 class VectorMath
 {
+        public static double[] Multiply(double[] vector, double scalar)
+    {
+        if (!IsVector(vector))
+            return new double[] { -1 };
+
+        for (int i = 0; i < vector.Count(); i++)
+            vector[i] *= scalar;
+
+        return vector;
+    }
 
     public static double Magnitude(double[] vector)
     {
@@ -25,6 +35,7 @@ class VectorMath
 
         if ((size = vector1.Count()) != vector2.Count() || !IsVector(vector1) || !IsVector(vector2))
             return new double[] { -1 };
+            
 
         sum = new double[size];
 
@@ -44,14 +55,5 @@ class VectorMath
         return false;
     }
 
-    public static double[] Multiply(double[] vector, double scalar)
-    {
-        if (!IsVector(vector))
-            return new double[] { -1 };
 
-        for (int i = 0; i < vector.Count(); i++)
-            vector[i] *= scalar;
-
-        return vector;
-    }
 }
