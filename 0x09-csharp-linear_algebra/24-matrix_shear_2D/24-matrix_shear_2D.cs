@@ -8,6 +8,13 @@ class MatrixMath
         x = 0,
         y = 1
     }
+    /// <summary>
+    /// method that shears a square 2D matrix by a given shear factor and returns the resulting matrix. 
+    /// </summary>
+    /// <param name="matrix">"matrix to shear"</param>
+    /// <param name="direction">"x,y direction to shear in"</param>
+    /// <param name="factor">"shear amount"</param>
+    /// <returns>a matrix with shear applied</returns>
     public static double[,] Shear2D(double[,] matrix, char direction, double factor)
     {
 
@@ -49,26 +56,7 @@ class MatrixMath
 
     }
     
-    public static double[,] Rotate2D(double[,] matrix, double angle)
-    {
-        if (matrix.LongLength / 2 != 2)
-            return new double[,] { { -1 } };
 
-        double[,] rot = new double[2, 2];
-
-        for (int col = 0; col < matrix.GetLength(1); col++)
-        {
-            var column = GetColumn(matrix, (uint)col);
-
-
-            rot[0, col] = Math.Round((column[0] * Math.Cos(angle) + column[1] * -(Math.Sin(angle))), 2);
-            rot[1, col] = Math.Round((column[0] * Math.Sin(angle) + column[1] * (Math.Cos(angle))), 2);
-
-        }
-
-        return rot;
-
-    }
 
     public static double[] GetRow(double[,] matrix, uint row)
     {
@@ -80,15 +68,7 @@ class MatrixMath
         return r;
     }
 
-    public static double[] GetColumn(double[,] matrix, uint column)
-    {
-        int size = matrix.GetLength(0);
-        var col = new double[size];
-        for (int i = 0; i < size; i++)
-            col[i] = matrix[i, column];
-
-        return col;
-    }
+  
 
 
     static bool IsMatrix(double[,] matrix)
@@ -107,7 +87,6 @@ class MatrixMath
 
 class VectorMath
 {
-
     public static double DotProduct(double[] vector1, double[] vector2)
     {
         int size = 0;
@@ -123,38 +102,6 @@ class VectorMath
 
         return dot.Sum();
     }
-    public static double Magnitude(double[] vector)
-    {
-
-        if (vector.Count() < 2 || vector.Count() > 3)
-            return -1;
-
-        for (int i = 0; i < vector.Count(); i++)
-        {
-            vector[i] *= vector[i];
-        }
-        return Math.Round(Math.Sqrt(Math.Abs(vector.Sum())), 1);
-
-    }
-
-    public static double[] Add(double[] vector1, double[] vector2)
-    {
-        int size;
-        double[] sum;
-
-        if ((size = vector1.Count()) != vector2.Count() || !IsVector(vector1) || !IsVector(vector2))
-            return new double[] { -1 };
-
-        sum = new double[size];
-
-        for (int i = 0; i < size; i++)
-        {
-            sum[i] = vector1[i] + vector2[i];
-        }
-
-        return sum;
-
-    }
 
     static bool IsVector(double[] vec)
     {
@@ -163,14 +110,4 @@ class VectorMath
         return false;
     }
 
-    public static double[] Multiply(double[] vector, double scalar)
-    {
-        if (!IsVector(vector))
-            return new double[] { -1 };
-
-        for (int i = 0; i < vector.Count(); i++)
-            vector[i] *= scalar;
-
-        return vector;
-    }
 }
