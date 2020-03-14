@@ -36,7 +36,7 @@ class MatrixMath
         }
         else
         {
-            shear = new double[2, 2] { { 1, 0 }, { 0, factor } };
+            shear = new double[2, 2] { { 1, 0 }, { factor, 1 } };
             for (int r1 = 0; r1 < 2; r1++)
                 for (int r2 = 0; r2 < 2; r2++)
                 {
