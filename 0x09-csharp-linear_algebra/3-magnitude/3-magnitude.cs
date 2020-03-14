@@ -11,7 +11,7 @@ class VectorMath {
         {
             vector[i] *= vector[i];
         }
-        return Math.Round(Math.Sqrt(Math.Abs(vector.Sum())), 1);
+        return Math.Round(Math.Sqrt(Math.Abs(vector.Sum())), 2);
 
     }
 }
