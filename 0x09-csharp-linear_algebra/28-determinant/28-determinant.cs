@@ -4,6 +4,11 @@ using System.Linq;
 class MatrixMath
 {
 
+/// <summary>
+/// method that calculates the determinant of a matrix
+/// </summary>
+/// <param name="matrix">matrix to calculate</param>
+/// <returns>Determinat or -1 if failure</returns>
     public static double Determinant(double[,] matrix) {
         int size = 0;
         if (((size = matrix.GetLength(0)) != 2 && matrix.GetLength(0) != 3) || !IsMatrix(matrix) )
