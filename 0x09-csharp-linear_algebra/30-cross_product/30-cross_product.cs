@@ -11,7 +11,9 @@ class VectorMath
     /// <returns>corss product of 2 vectors else double[] with -1 inside</returns>
     public static double[] CrossProduct(double[] vector1, double[] vector2)
     {
-        if (!VectorMath.IsVector(vector1) || !VectorMath.IsVector(vector2))
+        if (!VectorMath.IsVector(vector1) || !VectorMath.IsVector(vector2) ||
+        vector1.Count() != vector2.Count()
+        )
             return new double[] { -1 };
 
         var i = new double[2, 2]
