@@ -1,26 +1,32 @@
 ﻿using System;
 using System.Linq;
 
-class MatrixMath
+class VectorMath
 {
+    /// <summary>
+    ///  calculates the cross product of two 3D vectors and returns the resulting vector.
+    /// </summary>
+    /// <param name="vector1">lhs vector3</param>
+    /// <param name="vector2">rhs vector3</param>
+    /// <returns>corss product of 2 vectors else double[] with -1 inside</returns>
     public static double[] CrossProduct(double[] vector1, double[] vector2)
     {
         if (!VectorMath.IsVector(vector1) || !VectorMath.IsVector(vector2))
             return new double[] { -1 };
 
-        var i = new double[2,2]
+        var i = new double[2, 2]
         {
             {vector1[1], vector1[2]},
             {vector2[1], vector2[2]}
         };
 
-        var j = new double[2,2]
+        var j = new double[2, 2]
          {
             {vector1[0], vector1[2]},
             {vector2[0], vector2[2]}
         };
 
-        var k = new double[2,2]
+        var k = new double[2, 2]
          {
             {vector1[0], vector1[1]},
             {vector2[0], vector2[1]}
@@ -28,14 +34,30 @@ class MatrixMath
 
         double[] cross = new double[3]
         {
-            Determinant(i),
-           - Determinant(j),
-            Determinant(k)
+           MatrixMath.Determinant(i),
+           - MatrixMath.Determinant(j),
+           MatrixMath.Determinant(k)
         };
 
         return cross;
     }
 
+        static bool IsVector(double[] vec)
+    {
+        if (vec.Count() == 2 || vec.Count() == 3)
+            return true;
+        return false;
+    }
+}
+class MatrixMath
+{
+
+
+    // <summary>
+    /// method that calculates the determinant of a matrix
+    /// </summary>
+    /// <param name="matrix">matrix to calculate</param>
+    /// <returns>Determinat or -1 if failure</returns>
     public static double Determinant(double[,] matrix)
     {
         int size = 0;
@@ -52,37 +74,11 @@ class MatrixMath
         {
             det =
             matrix[0, 0] * (matrix[1, 1] * matrix[2, 2] - matrix[2, 1] * matrix[1, 2]) -
-            matrix[0, 1] * (matrix[1, 0] * matrix[2, 2] - matrix[2, 0] * matrix[1, 2]) -
-            matrix[0, 2] * (matrix[1, 0] * matrix[2, 1] - matrix[2, 0] * matrix[2, 2]);
+            matrix[0, 1] * (matrix[1, 0] * matrix[2, 2] - matrix[2, 0] * matrix[1, 2]) +
+            matrix[0, 2] * (matrix[1, 0] * matrix[2, 1] - matrix[2, 0] * matrix[1, 1]);
         }
 
-        return det;
-    }
-    public static double[,] Shear2D(double[,] matrix, char direction, double factor)
-    {
-
-        if (matrix.LongLength / 2 != 2)
-            return new double[,] { { -1 } };
-
-        else if (direction != 'x' && direction != 'y')
-            return new double[,] { { -1 } };
-
-
-        int dir = (int)direction - (int)'x';
-
-        Console.WriteLine("dir: {0}", dir);
-
-
-        for (int i = 0; i < 2; i++)
-        {
-            matrix[dir, i] += factor;
-        }
-
-        return matrix;
-
-
-
-
+        return Math.Round(det, 2);
     }
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
@@ -104,27 +100,7 @@ class MatrixMath
         return rot;
 
     }
-    public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
-    {
 
-        if (matrix1.GetLength(1) != (matrix2.GetLength(1)))
-            return new double[,] { { -1 } };
-
-        int rowSize = matrix1.GetLength(0);
-        int colSize = matrix1.GetLength(1);
-        var result = new double[rowSize, colSize];
-
-        for (int row = 0; row < rowSize; row++)
-            for (int col = 0; col < colSize; col++)
-                result[row, col] =
-                    VectorMath.DotProduct(
-                        GetRow(matrix1, (uint)row),
-                         GetColumn(matrix2, (uint)col));
-
-        return result;
-
-
-    }
 
     public static double[] GetRow(double[,] matrix, uint row)
     {
@@ -159,74 +135,4 @@ class MatrixMath
         return true;
     }
 
-}
-
-class VectorMath
-{
-
-    public static double DotProduct(double[] vector1, double[] vector2)
-    {
-        int size = 0;
-        if ((size = vector1.Count()) != vector2.Count() || !(IsVector(vector1) || IsVector(vector2)))
-            return -1;
-
-        double[] dot = new double[size];
-
-        for (int i = 0; i < size; i++)
-        {
-            dot[i] = vector1[i] * vector2[i];
-        }
-
-        return dot.Sum();
-    }
-    public static double Magnitude(double[] vector)
-    {
-
-        if (vector.Count() < 2 || vector.Count() > 3)
-            return -1;
-
-        for (int i = 0; i < vector.Count(); i++)
-        {
-            vector[i] *= vector[i];
-        }
-        return Math.Round(Math.Sqrt(Math.Abs(vector.Sum())), 1);
-
-    }
-
-    public static double[] Add(double[] vector1, double[] vector2)
-    {
-        int size;
-        double[] sum;
-
-        if ((size = vector1.Count()) != vector2.Count() || !IsVector(vector1) || !IsVector(vector2))
-            return new double[] { -1 };
-
-        sum = new double[size];
-
-        for (int i = 0; i < size; i++)
-        {
-            sum[i] = vector1[i] + vector2[i];
-        }
-
-        return sum;
-
-    }
-
-    public static bool IsVector(double[] vec)
-    {
-        if (vec.Count() == 2 || vec.Count() == 3)
-            return true;
-        return false;
-    }
-
-    public static double[] Multiply(double[] vector, double scalar)
-    {
-        if (!IsVector(vector))
-            return new double[] { -1 };
-
-        for (int i = 0; i < vector.Count(); i++)
-            vector[i] *= scalar;
-
-        return vector;
-    }
 }
