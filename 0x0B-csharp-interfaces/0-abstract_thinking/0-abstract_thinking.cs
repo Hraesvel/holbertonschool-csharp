@@ -2,6 +2,6 @@
     public string name;
 
     public override string ToString(){
-        return $"{name} is a {this.GetType().Name}";
+        return string.Format("{0} is a {1}", name, this.GetType().Name);
     }
 }
