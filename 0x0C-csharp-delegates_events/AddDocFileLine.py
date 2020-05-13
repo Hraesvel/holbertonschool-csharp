@@ -2,6 +2,7 @@
 
 from lxml import etree
 from sys import argv
+from os import path
 
 def insertDoc():
     if len(argv) <= 1:
@@ -10,20 +11,29 @@ def insertDoc():
 
     root = None
     doc = None
-
+    tag = None
     line = argv[1]
 
     if argv[1][-1] == '/':
         line = argv[1][0:-1]
         print(line)
 
-    path = "./{0}/{0}.csproj".format(line)
+    # print(path.basename(line))
+    p = path.abspath("./{0}/{0}.csproj".format(line))
     try:
-        with open(path, "r") as f:
+        with open(p, "r") as f:
             parser = etree.XMLParser(remove_blank_text=True)
-            t = etree.fromstring(f.read(), parser)
-            root = t.find("PropertyGroup").find("RootNamespace")
-            doc = t.find("PropertyGroup").find("DocumentationFile")
+            try:
+                tag = etree.fromstring(f.read(), parser)
+            except etree.XMLSyntaxError as e:
+                print(e)
+                return
+
+
+            root = tag.find("PropertyGroup").find("TargetFramework")
+            print(etree.tostring(root))
+
+            doc = tag.find("PropertyGroup").find("DocumentationFile")
             if doc is not None:
                 print("{} as DocumentationFile tag already".format(argv[1]))
                 return
@@ -32,11 +42,18 @@ def insertDoc():
         return
 
     
-    with open(path, "w") as f:
+    with open(p, "w") as f:
         doctag = etree.Element("DocumentationFile")
         doctag.text = 'bin\\$(Configuration)\\$(TargetFramework)\\$(AssemblyName).xml'
         root.addnext(doctag)
-        f.write(etree.tostring(t, pretty_print = True))
+        try:
+            s = etree.tostring(tag, pretty_print = True)
+            
+            f.write(s.decode('utf-8'))
+        except TypeError as e:
+            print(etree.tostring(tag, pretty_print = True))
+            print(e)
+            
 
 if __name__ == "__main__":
     insertDoc()
