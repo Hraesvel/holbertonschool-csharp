@@ -6,6 +6,7 @@
 /// <typeparam name="T">base type</typeparam>
 class Queue<T>
 {
+    
     private int count;
     private Node head;
     private Node tail;

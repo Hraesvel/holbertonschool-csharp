@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 /// <summary>
 /// My implementation of Queue type
