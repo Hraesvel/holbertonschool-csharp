@@ -31,12 +31,13 @@ public class Player
         hp = this.maxHp = maxHp;
     }
 
+    
     /// <summary>
     /// Prints player health as message
     /// </summary>
     public void PrintHealth()
     {
-        Console.WriteLine($"{name} has {hp} / {maxHp} health");
+        Console.WriteLine($"{name} has {hp} / {maxHp} health.");
     }
     
 
