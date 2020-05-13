@@ -1,11 +1,14 @@
 ﻿using System;
 
+/// <summary>
+/// Base class for object to Inherit
+/// </summary>
 public abstract class Base {
     /// <summary>
     /// public name of object
     /// </summary>
     public string name;
-
+    
     /// <summary>
     /// return a message
     /// </summary>
