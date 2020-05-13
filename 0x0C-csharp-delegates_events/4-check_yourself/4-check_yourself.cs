@@ -9,10 +9,10 @@ public class Player
     private float maxHp;
     private float hp;
     private string status;
-    
-/// <summary>
-/// event handler
-/// </summary>
+
+    /// <summary>
+    /// event handler
+    /// </summary>
     public event EventHandler<CurrentHPArgs> HPCheck;
 
 
@@ -23,22 +23,19 @@ public class Player
     /// <param name="maxHp">Defaulted to 100.0f</param>
     public Player(string name = "Player", float maxHp = 100f)
     {
-        if (string.IsNullOrEmpty(name))
-            name = "Player";
-
         this.name = name;
         if (maxHp <= 0)
         {
-            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default");
+            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
             maxHp = 100f;
         }
 
-        this.hp = this.maxHp = maxHp;
+        hp = this.maxHp = maxHp;
         this.status = $"{name} is ready to go!";
         this.HPCheck += CheckStatus;
     }
 
-     /// <summary>
+    /// <summary>
     /// Prints player health as message
     /// </summary>
     public void PrintHealth()
@@ -83,7 +80,7 @@ public class Player
             hp = maxHp;
         else
             hp = newHp;
-        
+
         HPCheck?.Invoke(this, new CurrentHPArgs(hp));
     }
 
@@ -129,7 +126,7 @@ public class Player
             status = $"{name} needs help!";
         else
             status = $"{name} is knocked out!";
-        
+
         Console.WriteLine(status);
     }
 }

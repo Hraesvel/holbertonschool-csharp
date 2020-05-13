@@ -16,17 +16,14 @@ public class Player
     /// <param name="maxHp">Defaulted to 100.0f</param>
     public Player(string name = "Player", float maxHp = 100f)
     {
-        if (string.IsNullOrEmpty(name))
-            name = "Player";
-
         this.name = name;
         if (maxHp <= 0)
         {
-            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default");
+            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
             maxHp = 100f;
         }
 
-        this.hp = this.maxHp = maxHp;
+        hp = this.maxHp = maxHp;
     }
 
     /// <summary>
@@ -75,13 +72,13 @@ public class Player
         else
             hp = newHp;
     }
-    
-/// <summary>
-/// applies damage/heal modifier to value
-/// </summary>
-/// <param name="baseValue">value to be modified</param>
-/// <param name="modifier"> enum for possible modifications</param>
-/// <returns></returns>
+
+    /// <summary>
+    /// applies damage/heal modifier to value
+    /// </summary>
+    /// <param name="baseValue">value to be modified</param>
+    /// <param name="modifier"> enum for possible modifications</param>
+    /// <returns></returns>
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
         var val = baseValue;
