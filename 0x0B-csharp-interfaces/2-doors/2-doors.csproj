@@ -6,5 +6,5 @@
     <RootNamespace>_2_doors</RootNamespace>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
   </PropertyGroup>
-
+  
 </Project>

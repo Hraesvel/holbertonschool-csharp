@@ -35,6 +35,10 @@ public class Door : Base, IInteractive
         this.name = name;
     }
 
+    
+    /// <summary>
+    /// perform Interact action
+    /// </summary>
     public void Interact()
     {
         System.Console.WriteLine($"You try to open the {this.name}. It's locked.");
