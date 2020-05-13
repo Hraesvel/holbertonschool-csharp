@@ -1,26 +1,23 @@
 ﻿using System;
 
-class Key : Base , ICollectable {
-
-    private bool _isCollected;
-    public Key (string name = "Key", bool isCollected = false)
+class Key : Base, ICollectable
+{
+    public Key(string name = "Key", bool isCollected = false)
     {
         this.name = name;
-        _isCollected = isCollected;
+        this.isCollected = isCollected;
     }
-    public bool isCollected
-    {
-        get => _isCollected;
-        set => _isCollected = value;
-    }
+
+    public bool isCollected { get; set; }
 
     public void Collect()
     {
-        if (!_isCollected)
-           { _isCollected = true;
+        if (!isCollected)
+        {
+            isCollected = true;
             Console.WriteLine("You pickup the {0}.", name);
-           }
-        else 
+        }
+        else
             Console.WriteLine("You have already picked up the {0}.", name);
     }
 }
