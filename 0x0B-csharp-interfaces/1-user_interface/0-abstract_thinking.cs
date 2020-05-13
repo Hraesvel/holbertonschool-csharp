@@ -6,11 +6,6 @@ abstract class Base {
     /// </summary>
     public string name;
 
-    protected Base(string name)
-    {
-        this.name = name;
-    }
-
     /// <summary>
     /// return a message
     /// </summary>
