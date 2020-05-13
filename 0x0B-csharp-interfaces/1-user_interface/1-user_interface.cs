@@ -1,15 +1,24 @@
-interface IInteractive
+/// <summary>
+/// Make object intractable
+/// </summary>
+public interface IInteractive
 {
     void Interact();
 }
 
-interface IBreakable
+/// <summary>
+/// give objects a durability property and breakable state
+/// </summary>
+public interface IBreakable
 {
     int durability { get; set; }
     void Break();
 }
 
-interface ICollectable
+/// <summary>
+/// make an object collectible.
+/// </summary>
+public interface ICollectable
 {
     bool isCollected { get; set; }
 
