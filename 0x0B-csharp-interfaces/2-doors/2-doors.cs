@@ -1,18 +1,5 @@
 ﻿using System;
 
-class Door : Base, IInteractive
-{
-    public Door(string name = "Door")
-    {
-        this.name = name;
-    }
-
-    public void Interact()
-    {
-        System.Console.WriteLine($"You try to open the {this.name}. It's locked");
-    }
-}
-
 /// <summary>
 /// Base class for object to Inherit
 /// </summary>
@@ -30,6 +17,27 @@ public abstract class Base
     public override string ToString()
     {
         return string.Format("{0} is a {1}", name, this.GetType().Name);
+    }
+}
+
+
+/// <summary>
+/// Door type
+/// </summary>
+public class Door : Base, IInteractive
+{
+    /// <summary>
+    /// Door constructor
+    /// </summary>
+    /// <param name="name">name of door, defaults to "Door"</param>
+    public Door(string name = "Door")
+    {
+        this.name = name;
+    }
+
+    public void Interact()
+    {
+        System.Console.WriteLine($"You try to open the {this.name}. It's locked");
     }
 }
 
