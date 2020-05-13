@@ -37,7 +37,7 @@ public class Door : Base, IInteractive
 
     public void Interact()
     {
-        System.Console.WriteLine($"You try to open the {this.name}. It's locked");
+        System.Console.WriteLine($"You try to open the {this.name}. It's locked.");
     }
 }
 
