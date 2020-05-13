@@ -15,10 +15,9 @@ class Queue<T>
     /// check Queue base type
     /// </summary>
     /// <returns>string rep of base type</returns>
-    public string CheckType()
+    public Type CheckType()
     {
-        var t = this.GetType().BaseType;
-        return t.ToString();
+        return typeof(T);
     }
 
     class Node
