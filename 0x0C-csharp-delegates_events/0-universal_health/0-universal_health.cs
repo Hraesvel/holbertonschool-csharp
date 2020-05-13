@@ -14,8 +14,8 @@ public class Player {
     /// <param name="name">Defaulted to "Player"</param>
     /// <param name="maxHp">Defaulted to 100.0f</param>
     public Player (string name = "Player", float maxHp = 100f) {
-        if (string.IsNullOrEmpty(name))
-            name = "Player";
+        // if (string.IsNullOrEmpty(name))
+        //     name = "Player";
 
         this.name = name;
         if (maxHp <= 0)
