@@ -13,6 +13,7 @@ class Decoration: Base, IInteractive, IBreakable {
             if (durability <= 0) 
                 throw new System.Exception("Durability must be greater than 0");
 
+            this.isQuestItem = isQuestItem;
             this.name = name;
             this.durability = durability;
             
