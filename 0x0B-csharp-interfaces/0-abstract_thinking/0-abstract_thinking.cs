@@ -1,6 +1,9 @@
 ﻿using System;
 
-abstract class Base {
+/// <summary>
+/// Base class for object to Inherit
+/// </summary>
+public abstract class Base {
     /// <summary>
     /// public name of object
     /// </summary>

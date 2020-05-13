@@ -1,6 +1,6 @@
 using System;
 
-abstract class Base {
+public abstract class Base {
     /// <summary>
     /// public name of object
     /// </summary>
