@@ -5,12 +5,7 @@ abstract class Base {
     /// public name of object
     /// </summary>
     public string name;
-
-    protected Base(string name)
-    {
-        this.name = name;
-    }
-
+    
     /// <summary>
     /// return a message
     /// </summary>
