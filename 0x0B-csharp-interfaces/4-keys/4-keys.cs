@@ -15,7 +15,7 @@ class Key : Base, ICollectable
         if (!isCollected)
         {
             isCollected = true;
-            Console.WriteLine("You pickup the {0}.", name);
+            Console.WriteLine("You pick up the {0}.", name);
         }
         else
             Console.WriteLine("You have already picked up the {0}.", name);
