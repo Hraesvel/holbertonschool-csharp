@@ -2,7 +2,7 @@
 
 class Decoration : Base, IInteractive, IBreakable
 {
-    bool _isQuestItem;
+    public bool isQuestItem;
     public int durability { get; set; }
 
     public Decoration(
@@ -14,7 +14,7 @@ class Decoration : Base, IInteractive, IBreakable
         if (durability <= 0)
             throw new System.Exception("Durability must be greater than 0");
 
-        this._isQuestItem = isQuestItem;
+        this.isQuestItem = isQuestItem;
         this.name = name;
         this.durability = durability;
     }
@@ -27,7 +27,7 @@ class Decoration : Base, IInteractive, IBreakable
             return;
         }
 
-        if (_isQuestItem)
+        if (isQuestItem)
             Console.WriteLine("You look at the {0}. There's a key inside.", name);
         else
             Console.WriteLine("You look at the {0}. Not much to see here.", name);
