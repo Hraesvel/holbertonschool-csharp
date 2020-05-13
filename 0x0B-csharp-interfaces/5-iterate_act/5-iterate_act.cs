@@ -3,6 +3,13 @@ using System.Collections.Generic;
 
 class RoomObjects {
 
+/// <summary>
+///  Method that will perform primary action on set of given object and 
+/// type.
+/// </summary>
+/// <param name="roomObjects"> List of objects to perform actions on
+/// </param>
+/// <param name="type">Interface action to invoke</param>
     public static void IterateAction(List<Base> roomObjects, Type type)
     {
         switch (type.Name) {
