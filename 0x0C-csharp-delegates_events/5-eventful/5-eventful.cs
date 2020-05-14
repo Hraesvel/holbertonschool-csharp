@@ -1,20 +1,48 @@
 ﻿using System;
 
+
+/// <summary>
+/// Possible basevalue modifiers
+/// </summary>
+public enum Modifier
+{
+    /// <summary>glancing</summary>
+    Weak,
+    /// <summary>base</summary>
+    Base,
+    /// <summary>critical</summary>
+    Strong,
+}
+
+/// <summary>
+/// Delegate for calculating modifies
+/// </summary>
+/// <param name="baseValue"></param>
+/// <param name="modifier"></param>
+public delegate float CalculateModifier(float baseValue, Modifier modifier);
+
+/// <summary>
+/// Deleagate for calculating health
+/// </summary>
+/// <param name="amt">amount</param>
+public delegate void CalculateHealth(float amt);
+
+
 /// <summary>
 /// Player class
 /// </summary>
 public class Player
 {
-    private string name;
-    private float maxHp;
     private float hp;
+    private float maxHp;
+    private string name;
     private string status;
 
+
     /// <summary>
-    /// event handler
+    /// Hp check event handler
     /// </summary>
     public event EventHandler<CurrentHPArgs> HPCheck;
-
 
     /// <summary>
     /// Player Constructor
@@ -29,9 +57,7 @@ public class Player
             Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
             maxHp = 100f;
         }
-
         hp = this.maxHp = maxHp;
-        this.status = $"{name} is ready to go!";
         this.HPCheck += CheckStatus;
     }
 
@@ -51,8 +77,10 @@ public class Player
     public void TakeDamage(float damage)
     {
         if (damage < 0)
-            damage = 0;
+            damage = 0f;
         Console.WriteLine($"{name} takes {damage} damage!");
+        OnCheckStatus(new CurrentHPArgs(hp));
+
         ValidateHP(hp - damage);
     }
 
@@ -63,8 +91,10 @@ public class Player
     public void HealDamage(float heal)
     {
         if (heal < 0)
-            heal = 0;
+            heal = 0f;
         Console.WriteLine($"{name} heals {heal} HP!");
+        OnCheckStatus(new CurrentHPArgs(hp));
+
         ValidateHP(hp + heal);
     }
 
@@ -80,33 +110,27 @@ public class Player
             hp = maxHp;
         else
             hp = newHp;
-
+        
         OnCheckStatus(new CurrentHPArgs(hp));
-        // HPCheck?.Invoke(this, new CurrentHPArgs(hp));
     }
+
 
     /// <summary>
     /// applies damage/heal modifier to value
     /// </summary>
     /// <param name="baseValue">value to be modified</param>
     /// <param name="modifier"> enum for possible modifications</param>
-    /// <returns></returns>
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
-        var val = baseValue;
         switch (modifier)
         {
             case Modifier.Weak:
-                val /= 2f;
-                break;
+                return baseValue * 0.5f;
             case Modifier.Base:
-                break;
-            case Modifier.Strong:
-                val *= 1.5f;
-                break;
+                return baseValue;
+            default:
+                return baseValue * 1.5f;
         }
-
-        return val;
     }
 
 
@@ -129,8 +153,8 @@ public class Player
             status = $"{name} is knocked out!";
 
         Console.WriteLine(status);
-    }
 
+    }
     private void HPValueWarning(object sender, CurrentHPArgs e)
     {
         if (e.currentHp == 0)
@@ -146,7 +170,7 @@ public class Player
             Console.ForegroundColor = ConsoleColor.Black;
         }
     }
-
+    
     private void OnCheckStatus(CurrentHPArgs e)
     {
         if (e.currentHp <= maxHp / 4)
@@ -157,39 +181,23 @@ public class Player
     }
 }
 
-/// <summary>
-/// Possible basevalue modifiers
-/// </summary>
-public enum Modifier
-{
-    Weak,
-    Base,
-    Strong,
-}
 
 /// <summary>
-/// Delegate for calculating modifies
-/// </summary>
-/// <param name="baseValue"></param>
-/// <param name="modifier"></param>
-public delegate float CalculateModifier(float baseValue, Modifier modifier);
-
-/// <summary>
-/// Event Args class
-/// </summary>
-public class CurrentHPArgs : EventArgs
-{
-    /// <summary>
-    /// hp
+    /// Event Args class
     /// </summary>
-    public readonly float currentHp;
-
-    /// <summary>
-    /// Constructor
-    /// </summary>
-    /// <param name="newHp"></param>
-    public CurrentHPArgs(float newHp)
+    public class CurrentHPArgs : EventArgs
     {
-        this.currentHp = newHp;
+        /// <summary>
+        /// hp
+        /// </summary>
+        public readonly float currentHp;
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="newHp"></param>
+        public CurrentHPArgs(float newHp)
+        {
+            this.currentHp = newHp;
+        }
     }
-}
