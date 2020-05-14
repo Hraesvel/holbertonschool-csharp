@@ -8,8 +8,10 @@ public enum Modifier
 {
     /// <summary>glancing</summary>
     Weak,
+
     /// <summary>base</summary>
     Base,
+
     /// <summary>critical</summary>
     Strong,
 }
@@ -57,6 +59,7 @@ public class Player
             Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
             maxHp = 100f;
         }
+
         status = $"{this.name} is ready to go!";
         hp = this.maxHp = maxHp;
         this.HPCheck += CheckStatus;
@@ -111,7 +114,7 @@ public class Player
             hp = maxHp;
         else
             hp = newHp;
-        
+
         OnCheckStatus(new CurrentHPArgs(hp));
     }
 
@@ -148,14 +151,14 @@ public class Player
             status = $"{name} is doing well!";
         else if (e.currentHp < maxHp / 2 && e.currentHp >= maxHp / 4)
             status = $"{name} isn't doing too great...!";
-        else if (e.currentHp > 0f)
+        else if (e.currentHp > 0f && e.currentHp < maxHp / 2)
             status = $"{name} needs help!";
         else
             status = $"{name} is knocked out!";
 
         Console.WriteLine(status);
-
     }
+
     private void HPValueWarning(object sender, CurrentHPArgs e)
     {
         if (e.currentHp == 0)
@@ -171,7 +174,7 @@ public class Player
             Console.ForegroundColor = ConsoleColor.Black;
         }
     }
-    
+
     private void OnCheckStatus(CurrentHPArgs e)
     {
         if (e.currentHp < maxHp / 4f)
@@ -184,21 +187,21 @@ public class Player
 
 
 /// <summary>
-    /// Event Args class
+/// Event Args class
+/// </summary>
+public class CurrentHPArgs : EventArgs
+{
+    /// <summary>
+    /// hp
     /// </summary>
-    public class CurrentHPArgs : EventArgs
-    {
-        /// <summary>
-        /// hp
-        /// </summary>
-        public readonly float currentHp;
+    public readonly float currentHp;
 
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="newHp"></param>
-        public CurrentHPArgs(float newHp)
-        {
-            this.currentHp = newHp;
-        }
+    /// <summary>
+    /// Constructor
+    /// </summary>
+    /// <param name="newHp"></param>
+    public CurrentHPArgs(float newHp)
+    {
+        this.currentHp = newHp;
     }
+}
