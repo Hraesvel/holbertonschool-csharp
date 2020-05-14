@@ -11,7 +11,7 @@ public enum Modifier
     /// <summary>base</summary>
     Base,
     /// <summary>critical</summary>
-    Strong
+    Strong,
 }
 
 /// <summary>
