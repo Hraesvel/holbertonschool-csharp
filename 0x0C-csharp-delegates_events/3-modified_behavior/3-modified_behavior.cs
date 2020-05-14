@@ -1,10 +1,6 @@
 ﻿using System;
 
-/// <summary>
-/// Deleagate for calculating health
-/// </summary>
-/// <param name="damage"></param>
-public delegate void CalculateHealth(float damage);
+
 
 /// <summary>
 /// Player class
@@ -31,6 +27,12 @@ public class Player
 
         hp = this.maxHp = maxHp;
     }
+    
+    /// <summary>
+    /// Deleagate for calculating health
+    /// </summary>
+    /// <param name="damage"></param>
+    public delegate void CalculateHealth(float damage);
 
     /// <summary>
     /// Prints player health as message
