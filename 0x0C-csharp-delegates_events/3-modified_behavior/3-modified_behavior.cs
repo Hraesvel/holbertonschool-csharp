@@ -96,9 +96,9 @@ public class Player
                 return baseValue;
             case Modifier.Strong:
                 return baseValue * 1.5f;
-            default:
-                throw new ArgumentOutOfRangeException(nameof(modifier), modifier, null);
         }
+        return baseValue;
+
     }
 }
 
