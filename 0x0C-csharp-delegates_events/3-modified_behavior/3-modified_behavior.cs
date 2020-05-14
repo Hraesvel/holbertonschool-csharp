@@ -32,7 +32,7 @@ public class Player
     /// Deleagate for calculating health
     /// </summary>
     /// <param name="damage"></param>
-    public delegate void CalculateHealth(float damage);
+    delegate void CalculateHealth(float damage);
 
     /// <summary>
     /// Prints player health as message
@@ -89,20 +89,21 @@ public class Player
     /// <returns></returns>
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
-        var val = baseValue;
         switch (modifier)
         {
             case Modifier.Weak:
-                val /= 2f;
+                baseValue /= 2f;
                 break;
             case Modifier.Base:
                 break;
             case Modifier.Strong:
-                val *= 1.5f;
+                baseValue *= 1.5f;
+                break;
+            default:
                 break;
         }
 
-        return val;
+        return baseValue;
     }
 }
 
