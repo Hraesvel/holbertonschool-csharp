@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 
 
@@ -54,7 +54,7 @@ public class Player
         if (damage < 0)
             damage = 0;
         Console.WriteLine($"{name} takes {damage} damage!");
-        // hp -= damage;
+        hp -= damage;
     }
 
     /// <summary>
@@ -66,6 +66,6 @@ public class Player
         if (heal < 0)
             heal = 0;
         Console.WriteLine($"{name} heals {heal} HP!");
-        // hp += heal;
+        hp += heal;
     }
 }
