@@ -88,17 +88,15 @@ public class Player
     /// <returns>float</returns>
     public static float ApplyModifier(float baseValue, Modifier modifier)
     {
-        switch (modifier)
-        {
-            case Modifier.Weak:
-                return baseValue / 2f;
-            case Modifier.Base:
-                return baseValue;
-            case Modifier.Strong:
-                return baseValue * 1.5f;
-        }
-        return baseValue;
+        
+        if (modifier == Modifier.Weak)
+            baseValue /= 2f;
+        else if (modifier == Modifier.Base)
+            return baseValue;
+        else if (modifier == Modifier.Strong)
+            baseValue *= 1.5f;
 
+        return baseValue;
     }
 }
 
