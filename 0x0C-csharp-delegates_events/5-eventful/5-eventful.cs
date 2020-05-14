@@ -57,7 +57,7 @@ public class Player
             Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
             maxHp = 100f;
         }
-        status = $"{name} is ready to go!";
+        status = $"{this.name} is ready to go!";
         hp = this.maxHp = maxHp;
         this.HPCheck += CheckStatus;
     }
@@ -174,7 +174,7 @@ public class Player
     
     private void OnCheckStatus(CurrentHPArgs e)
     {
-        if (e.currentHp <= maxHp / 4f)
+        if (e.currentHp < maxHp / 4f)
             HPCheck += HPValueWarning;
 
         HPCheck?.Invoke(this, e);

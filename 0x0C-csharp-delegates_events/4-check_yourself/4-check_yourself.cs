@@ -60,7 +60,7 @@ public class Player
             maxHp = 100f;
         }
 
-        status = $"{name} is ready to go!";
+        status = $"{this.name} is ready to go!";
         hp = this.maxHp = maxHp;
         HPCheck += CheckStatus;
     }
