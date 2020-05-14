@@ -146,7 +146,7 @@ public class Player
         else if (e.currentHp < maxHp && e.currentHp >= maxHp / 2)
             status = $"{name} is doing well!";
         else if (e.currentHp < maxHp / 2 && e.currentHp >= maxHp / 4)
-            status = $"{name} isn't doing too great...!";
+            status = $"{name} isn't doing too great...";
         else if (e.currentHp > 0f && e.currentHp < maxHp / 2)
             status = $"{name} needs help!";
         else
