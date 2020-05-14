@@ -8,8 +8,10 @@ public enum Modifier
 {
     /// <summary>glancing</summary>
     Weak,
+
     /// <summary>base</summary>
     Base,
+
     /// <summary>critical</summary>
     Strong,
 }
@@ -145,33 +147,32 @@ public class Player
             status = $"{name} is doing well!";
         else if (e.currentHp < maxHp / 2 && e.currentHp >= maxHp / 4)
             status = $"{name} isn't doing too great...!";
-        else if (e.currentHp > 0f)
+        else if (e.currentHp > 0f && e.currentHp < maxHp / 2)
             status = $"{name} needs help!";
         else
             status = $"{name} is knocked out!";
 
         Console.WriteLine(status);
-
     }
 }
 
 
 /// <summary>
-    /// Event Args class
+/// Event Args class
+/// </summary>
+public class CurrentHPArgs : EventArgs
+{
+    /// <summary>
+    /// hp
     /// </summary>
-    public class CurrentHPArgs : EventArgs
-    {
-        /// <summary>
-        /// hp
-        /// </summary>
-        public readonly float currentHp;
+    public readonly float currentHp;
 
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="newHp"></param>
-        public CurrentHPArgs(float newHp)
-        {
-            this.currentHp = newHp;
-        }
+    /// <summary>
+    /// Constructor
+    /// </summary>
+    /// <param name="newHp"></param>
+    public CurrentHPArgs(float newHp)
+    {
+        this.currentHp = newHp;
     }
+}
