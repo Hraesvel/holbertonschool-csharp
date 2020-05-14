@@ -31,7 +31,7 @@ public class Player
     /// Deleagate for calculating health
     /// </summary>
     /// <param name="damage"></param>
-    delegate void CalculateHealth(float damage);
+    public delegate void CalculateHealth(float damage);
 
     /// <summary>
     /// Prints player health as message
