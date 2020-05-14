@@ -105,8 +105,18 @@ public class Player
 /// </summary>
 public enum Modifier
 {
+    
+    /// <summary>
+    /// glancing
+    /// </summary>
     Weak,
+    /// <summary>
+    /// base
+    /// </summary>
     Base,
+    /// <summary>
+    /// critical
+    /// </summary>
     Strong,
 }
 
