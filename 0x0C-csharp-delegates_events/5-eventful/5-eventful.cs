@@ -57,6 +57,7 @@ public class Player
             Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
             maxHp = 100f;
         }
+        status = $"{name} is ready to go!";
         hp = this.maxHp = maxHp;
         this.HPCheck += CheckStatus;
     }
@@ -66,7 +67,7 @@ public class Player
     /// </summary>
     public void PrintHealth()
     {
-        Console.WriteLine($"{name} has {hp} / {maxHp} health");
+        Console.WriteLine($"{name} has {hp} / {maxHp} health.");
     }
 
 
@@ -138,7 +139,7 @@ public class Player
     /// update player field "status"
     /// </summary>
     /// <param name="sender"></param>
-    /// <param name="e"></param>
+    /// <param name="e">args</param>
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
         if (e.currentHp == maxHp)
@@ -173,7 +174,7 @@ public class Player
     
     private void OnCheckStatus(CurrentHPArgs e)
     {
-        if (e.currentHp <= maxHp / 4)
+        if (e.currentHp <= maxHp / 4f)
             HPCheck += HPValueWarning;
 
         HPCheck?.Invoke(this, e);

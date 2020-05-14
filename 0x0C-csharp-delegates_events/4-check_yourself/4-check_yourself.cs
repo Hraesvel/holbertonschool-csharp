@@ -58,6 +58,7 @@ public class Player
             maxHp = 100f;
         }
 
+        status = $"{name} is ready to go!";
         hp = this.maxHp = maxHp;
         HPCheck += CheckStatus;
     }
@@ -67,7 +68,7 @@ public class Player
     /// </summary>
     public void PrintHealth()
     {
-        Console.WriteLine($"{name} has {hp} / {maxHp} health");
+        Console.WriteLine($"{name} has {hp} / {maxHp} health.");
     }
 
 
@@ -135,7 +136,7 @@ public class Player
     /// update player field "status"
     /// </summary>
     /// <param name="sender"></param>
-    /// <param name="e"></param>
+    /// <param name="e">args</param>
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
         if (e.currentHp == maxHp)
