@@ -1,6 +1,12 @@
 ﻿using System;
 
 /// <summary>
+/// Deleagate for calculating health
+/// </summary>
+/// <param name="damage"></param>
+public delegate void CalculateHealth(float damage);
+
+/// <summary>
 /// Player class
 /// </summary>
 public class Player
