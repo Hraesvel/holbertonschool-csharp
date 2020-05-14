@@ -86,7 +86,7 @@ public class Player
     /// <param name="baseValue">value to be modified</param>
     /// <param name="modifier"> enum for possible modifications</param>
     /// <returns>float</returns>
-    public static float ApplyModifier(float baseValue, Modifier modifier)
+    public float ApplyModifier(float baseValue, Modifier modifier)
     {
         
         if (modifier == Modifier.Weak)
