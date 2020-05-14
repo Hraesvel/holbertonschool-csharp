@@ -109,11 +109,14 @@ public class Player
     /// <param name="modifier"> enum for possible modifications</param>
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
-        if (modifier == Modifier.Weak)
-            return baseValue * 0.5f;
-        else if (modifier == Modifier.Base)
-            return baseValue;
-        else
-            return baseValue * 1.5f;
+        switch (modifier)
+        {
+            case Modifier.Weak:
+                return baseValue * 0.5f;
+            case Modifier.Base:
+                return baseValue;
+            default:
+                return baseValue * 1.5f;
+        }
     }
 }
