@@ -39,6 +39,9 @@ public class Player
     private string status;
 
 
+    /// <summary>
+    /// Hp check event handler
+    /// </summary>
     public event EventHandler<CurrentHPArgs> HPCheck;
 
     /// <summary>
@@ -56,6 +59,7 @@ public class Player
         }
 
         hp = this.maxHp = maxHp;
+        HPCheck += CheckStatus;
     }
 
     /// <summary>
