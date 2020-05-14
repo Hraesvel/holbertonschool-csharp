@@ -1,7 +1,6 @@
 ﻿using System;
 
 
-
 /// <summary>
 /// Player class
 /// </summary>
@@ -27,7 +26,7 @@ public class Player
 
         hp = this.maxHp = maxHp;
     }
-    
+
     /// <summary>
     /// Deleagate for calculating health
     /// </summary>
@@ -86,24 +85,20 @@ public class Player
     /// </summary>
     /// <param name="baseValue">value to be modified</param>
     /// <param name="modifier"> enum for possible modifications</param>
-    /// <returns></returns>
-    public float ApplyModifier(float baseValue, Modifier modifier)
+    /// <returns>float</returns>
+    public static float ApplyModifier(float baseValue, Modifier modifier)
     {
         switch (modifier)
         {
             case Modifier.Weak:
-                baseValue /= 2f;
-                break;
+                return baseValue / 2f;
             case Modifier.Base:
-                break;
+                return baseValue;
             case Modifier.Strong:
-                baseValue *= 1.5f;
-                break;
+                return baseValue * 1.5f;
             default:
-                break;
+                throw new ArgumentOutOfRangeException(nameof(modifier), modifier, null);
         }
-
-        return baseValue;
     }
 }
 
