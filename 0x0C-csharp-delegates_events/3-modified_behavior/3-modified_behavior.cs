@@ -2,13 +2,40 @@
 
 
 /// <summary>
+/// Possible basevalue modifiers
+/// </summary>
+public enum Modifier
+{
+    /// <summary>glancing</summary>
+    Weak,
+    /// <summary>base</summary>
+    Base,
+    /// <summary>critical</summary>
+    Strong
+}
+
+/// <summary>
+/// Delegate for calculating modifies
+/// </summary>
+/// <param name="baseValue"></param>
+/// <param name="modifier"></param>
+public delegate float CalculateModifier(float baseValue, Modifier modifier);
+
+/// <summary>
+/// Deleagate for calculating health
+/// </summary>
+/// <param name="amt">amount</param>
+public delegate void CalculateHealth(float amt);
+
+
+/// <summary>
 /// Player class
 /// </summary>
 public class Player
 {
-    private string name;
-    private float maxHp;
     private float hp;
+    private float maxHp;
+    private string name;
 
     /// <summary>
     /// Player Constructor
@@ -28,17 +55,11 @@ public class Player
     }
 
     /// <summary>
-    /// Deleagate for calculating health
-    /// </summary>
-    /// <param name="damage"></param>
-    public delegate void CalculateHealth(float damage);
-
-    /// <summary>
     /// Prints player health as message
     /// </summary>
     public void PrintHealth()
     {
-        Console.WriteLine($"{name} has {hp} / {maxHp} health.");
+        Console.WriteLine($"{name} has {hp} / {maxHp} health");
     }
 
 
@@ -49,7 +70,7 @@ public class Player
     public void TakeDamage(float damage)
     {
         if (damage < 0)
-            damage = 0;
+            damage = 0f;
         Console.WriteLine($"{name} takes {damage} damage!");
         ValidateHP(hp - damage);
     }
@@ -61,7 +82,7 @@ public class Player
     public void HealDamage(float heal)
     {
         if (heal < 0)
-            heal = 0;
+            heal = 0f;
         Console.WriteLine($"{name} heals {heal} HP!");
         ValidateHP(hp + heal);
     }
@@ -80,12 +101,12 @@ public class Player
             hp = newHp;
     }
 
+
     /// <summary>
     /// applies damage/heal modifier to value
     /// </summary>
     /// <param name="baseValue">value to be modified</param>
     /// <param name="modifier"> enum for possible modifications</param>
-    /// <returns>float</returns>
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
         if (modifier == Modifier.Weak)
@@ -96,30 +117,3 @@ public class Player
             return baseValue * 1.5f;
     }
 }
-
-/// <summary>
-/// Possible basevalue modifiers
-/// </summary>
-public enum Modifier
-{
-    
-    /// <summary>
-    /// glancing
-    /// </summary>
-    Weak,
-    /// <summary>
-    /// base
-    /// </summary>
-    Base,
-    /// <summary>
-    /// critical
-    /// </summary>
-    Strong,
-}
-
-/// <summary>
-/// Delegate for calculating modifies
-/// </summary>
-/// <param name="baseValue"></param>
-/// <param name="modifier"></param>
-public delegate float CalculateModifier(float baseValue, Modifier modifier);
