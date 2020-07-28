@@ -1,3 +1,6 @@
+using System;
+
+ 
 /// <summary>
 /// My implementation of Queue type
 /// </summary>
@@ -27,7 +30,7 @@ class Queue<T> {
     public Type CheckType () {
         return typeof (T);
     }
-/// 
+
 
     /// <summary>
     /// Added node to end of Queue
