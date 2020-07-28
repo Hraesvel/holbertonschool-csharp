@@ -15,8 +15,8 @@ class Queue<T> {
 
     int count = 0;
 
-    public string CheckType () {
-        return typeof (T).ToString ();
+    public Type CheckType () {
+        return typeof (T);
     }
 
     public void Enqueue (T value) {
@@ -32,7 +32,7 @@ class Queue<T> {
 
     }
 
-    public int Count() {
+    public int Count () {
         return count;
     }
 }

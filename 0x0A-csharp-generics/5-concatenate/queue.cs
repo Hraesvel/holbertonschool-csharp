@@ -17,8 +17,8 @@ class Queue<T> {
 
     int count = 0;
 
-    public string CheckType () {
-        return typeof (T).ToString ();
+    public Type CheckType () {
+        return typeof (T);
     }
 
     public void Enqueue (T value) {
@@ -65,37 +65,36 @@ class Queue<T> {
             return;
         }
 
-        for(var h = head; h != null; h = h.next)
-            Console.WriteLine($"{h.value}");
+        for (var h = head; h != null; h = h.next)
+            Console.WriteLine ($"{h.value}");
 
     }
 
     public string Concatenate () {
 
- if (head == null) {
+        if (head == null) {
             Console.WriteLine ("Queue is empty");
             return null;
         }
 
         string concat = null;
 
-        switch (typeof(T).ToString()) {
+        switch (typeof (T).ToString ()) {
             case "System.String":
-            for(var h = head; h != null; h = h.next)
-                concat += $"{h.value} ";
-            concat.TrimEnd();
-            break;
+                for (var h = head; h != null; h = h.next)
+                    concat += $"{h.value} ";
+                concat.TrimEnd ();
+                break;
             case "System.Char":
-            for(var h = head; h != null; h = h.next)
-                concat += $"{h.value}";
-            break;
+                for (var h = head; h != null; h = h.next)
+                    concat += $"{h.value}";
+                break;
             default:
-            Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
-            break;
-            
+                Console.WriteLine ("Concatenate() is for a queue of Strings or Chars only.");
+                break;
+
         }
 
-        
         return concat;
     }
 }

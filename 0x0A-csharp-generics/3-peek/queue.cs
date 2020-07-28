@@ -17,8 +17,8 @@ class Queue<T> {
 
     int count = 0;
 
-    public string CheckType () {
-        return typeof (T).ToString ();
+    public Type CheckType () {
+        return typeof (T);
     }
 
     public void Enqueue (T value) {
@@ -47,7 +47,7 @@ class Queue<T> {
         head = head.next;
 
         count -= 1;
-        return val; 
+        return val;
     }
 
     public T Peek () {
@@ -56,6 +56,6 @@ class Queue<T> {
             return default (T);
         }
         var val = head.value;
-        return val; 
+        return val;
     }
 }
