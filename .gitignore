@@ -48,3 +48,16 @@ $RECYCLE.BIN/
 */*/bin/
 */*/obj/
 */newproj.ps1
+0x0B-csharp-interfaces/.idea/
+
+0x0B-csharp-interfaces/.vs/
+
+0x0A-csharp-generics/.idea/
+
+0x0C-csharp-delegates_events/.idea/
+
+0x07-csharp-tdd/newsln.ps1
+
+image_processor/.idea/
+
+image_processor/images/
