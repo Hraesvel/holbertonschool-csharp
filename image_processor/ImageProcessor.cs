@@ -33,7 +33,8 @@ namespace image_processor
 
             foreach (var filename in filenames)
             {
-                tasks.Add(  Task.Run(() => InvertTask(filename)));
+                // tasks.Add(Task.Run(() => InvertTask(filename)));
+                tasks.Add(Task.Run(() => MatrixInvertTask(filename)));
             }
 
             Console.WriteLine("Starting Tasks");
@@ -74,7 +75,7 @@ namespace image_processor
             Console.WriteLine($"Processing: {filename}");
             Image img = Image.FromFile(filename);
             Bitmap bitmap = new Bitmap(img);
-            
+
             Bitmap newBitmap = new Bitmap(bitmap.Width, bitmap.Height);
 
             for (int x = 0; x < bitmap.Width; x++)
@@ -90,6 +91,41 @@ namespace image_processor
             var file = $"images/{fn}_inverse{ext}";
             newBitmap.Save(file, img.RawFormat);
         }
-        
+
+        private static void MatrixInvertTask(string filename)
+        {
+            Console.WriteLine($"Processing: {filename}");
+            Image img = Image.FromFile(filename);
+            Bitmap bitmap = new Bitmap(img);
+
+            Graphics g = Graphics.FromImage(bitmap);
+            
+            ColorMatrix clrMatrix = new ColorMatrix(
+                new float[][]
+                {
+                    new float[] {-1, 0, 0, 0, 0},
+                    new float[] {0, -1, 0, 0, 0},
+                    new float[] {0, 0, -1, 0, 0},
+                    new float[] {0, 0, 0, 1, 0},
+                    new float[] {1, 1, 1, 0, 1}
+                });
+
+            ImageAttributes attributes = new ImageAttributes();
+
+            attributes.SetColorMatrix(clrMatrix);
+
+            g.DrawImage(img,
+                new Rectangle(0, 0, img.Width, img.Height),
+                0, 0,
+                img.Width, img.Height,
+                GraphicsUnit.Pixel,
+                attributes
+            );
+            g.Dispose();
+
+            var fn = Path.GetFileNameWithoutExtension(filename);
+            var ext = Path.GetExtension(filename);
+            bitmap.Save($"./{fn}_inverse{ext}", img.RawFormat);
+        }
     }
 }
